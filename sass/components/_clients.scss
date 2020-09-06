@@ -1,0 +1,79 @@
+.clients-block {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.clients {
+  color: $secondary-text-color;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  justify-content: space-between;
+
+  & .item:nth-child(6n) {
+    margin-right: 0;
+  }
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+}
+.img-client {
+  fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-list .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    cursor: pointer;
+  }
+}
+
+.item:hover .img-client {
+  cursor: pointer;
+  fill: #2196f3;
+}
+
+.clients-list a:focus {
+  border: 1px solid #2196f3;
+}
+
+.client:focus .img-client {
+  fill: #2196f3;
+}

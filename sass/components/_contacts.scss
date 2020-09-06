@@ -1,0 +1,78 @@
+/* Header contacts */
+.contacts-list .contacts + .contacts {
+  margin-left: 30px;
+}
+
+.contacts {
+  color: $primary-text-color;
+  display: flex;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  list-style: none;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts a {
+  display: inline-flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $primary-text-color;
+}
+/* Footer contacts */
+.our-address {
+  color: $title-text-color;
+
+  font-size: 14px;
+  line-height: 1.7;
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  letter-spacing: 0.03em;
+}
+
+.our-contacts {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.address-list {
+  list-style: none;
+  font-style: normal;
+  font-weight: 500;
+  display: block;
+}
+.address-footer {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 400;
+  list-style: none;
+}
+
+.address-footer .item {
+  margin-top: 9px;
+  margin-bottom: 0;
+}
+
+.footer-contacts {
+  margin-right: 30px;
+  width: 270px;
+}

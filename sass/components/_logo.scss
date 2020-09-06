@@ -1,0 +1,23 @@
+.logo {
+  color: $title-text-color;
+
+  font-family: $logoFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  display: flex;
+}
+.accent {
+  color: $accent-color;
+  font-family: $logoFont;
+  margin-right: 10px;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}

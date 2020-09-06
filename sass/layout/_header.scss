@@ -1,0 +1,90 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.link-header {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+.site-nav .item {
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+.site-nav a {
+  color: $secondary-text-color;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  list-style: none;
+}
+.site-nav .link {
+  display: block;
+
+  position: relative;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  list-style: none;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.item .current::after {
+  content: '';
+
+  position: absolute;
+  display: block;
+
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+
+  background: $accent-color;
+  border-radius: 2px;
+}
+
+.link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &.current {
+    color: $accent-color;
+  }
+}
+.address-list {
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-vector {
+  width: 10px;
+  height: 15px;
+}
