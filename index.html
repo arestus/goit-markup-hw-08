@@ -4,25 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
-
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
-      <nav class="container main-nav">
+      <div class="container flexbox">
         <a style="color: #000000" class="logo" href="./index.html"
           ><span class="accent">Web </span>Studio
         </a>
-        <ul class="site-nav list">
-          <li class="item">
-            <a href="./index.html" class="link current">Студия</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="link">Портфолио</a>
-          </li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
-        </ul>
-        <address class="address-list">
+        <div id="mobile-menu-block" class="mobile-menu-block flexbox" data-menu>
+          <nav class="main-nav">
+            <ul class="site-nav list">
+              <li class="item">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+          </nav>
+
           <ul class="contacts-list list">
             <li class="contacts">
               <a href="mailto:info@devstudio.com" class="contacts link"
@@ -41,8 +43,30 @@
               >
             </li>
           </ul>
-        </address>
-      </nav>
+        </div>
+        <button
+          type="submit"
+          class="mobile-menu-button"
+          data-menu-button
+          aria-controls="mobile-menu-block"
+          aria-expanded="false"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu-burger"
+              href="./images/symbol-defs.svg#icon-menu-burger"
+            ></use>
+            <use
+              class="icon-menu-close"
+              href="./images/symbol-defs.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -323,68 +347,70 @@
     </main>
     <footer class="footer-background">
       <div class="container footer-area">
-        <div class="footer-contacts">
-          <a class="logo" href="./index.html">
-            <span class="accent">Web</span> Studio</a
-          >
-          <address class="address-footer">
-            <p class="our-address">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list">
+        <div class="footer-contacts-social">
+          <div class="footer-contacts">
+            <a class="logo" href="./index.html">
+              <span class="accent">Web</span> Studio</a
+            >
+            <address class="address-footer">
+              <p class="our-address">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="list">
+                <li class="item">
+                  <a class="our-contacts" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="item">
+                  <a class="our-contacts" href="tel:+380961111111">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-links">
+            <p>
+              <b class="join">Присоединяйтесь</b>
+            </p>
+            <ul class="social-list list">
               <li class="item">
-                <a class="our-contacts" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+                <a href="" class="socialfooter"
+                  ><svg class="socialfooter-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram-shooter"
+                    ></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a class="our-contacts" href="tel:+380961111111">
-                  +38 096 111 11 11</a
-                >
+                <a href="" class="socialfooter"
+                  ><svg class="socialfooter-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-twitter-shooter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="socialfooter"
+                  ><svg class="socialfooter-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-facebook-shooter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="socialfooter"
+                  ><svg class="socialfooter-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-linkedin-shooter"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social-links">
-          <p>
-            <b class="join">Присоединяйтесь</b>
-          </p>
-          <ul class="social-list list">
-            <li class="item">
-              <a href="" class="socialfooter"
-                ><svg class="socialfooter-icon">
-                  <use
-                    href="./images/symbol-defs.svg#icon-instagram-shooter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="socialfooter"
-                ><svg class="socialfooter-icon">
-                  <use
-                    href="./images/symbol-defs.svg#icon-twitter-shooter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="socialfooter"
-                ><svg class="socialfooter-icon">
-                  <use
-                    href="./images/symbol-defs.svg#icon-facebook-shooter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="socialfooter"
-                ><svg class="socialfooter-icon">
-                  <use
-                    href="./images/symbol-defs.svg#icon-linkedin-shooter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="mailing-link">
           <div>

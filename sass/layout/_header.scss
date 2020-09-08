@@ -1,25 +1,90 @@
-.header {
-  border-bottom: 1px solid #ececec;
+.mobile-menu-block {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    padding: 60px 0;
+    background-color: $secondary-background-color;
+    width: 100%;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  .header {
+    border-bottom: 1px solid #ececec;
+
+    @media screen and (max-width: 767px) {
+      position: relative;
+    }
+
+    @media screen and (min-width: 768px) {
+      .flexbox {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .link-header {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
 }
 
-.link-header {
-  fill: currentColor;
-  margin-right: 10px;
+.container.flexbox {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .main-nav {
-  display: flex;
-  align-items: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 86px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
 }
 .site-nav {
-  display: flex;
-  margin-left: 85px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    li:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
-.site-nav .item {
-  margin-right: 50px;
-}
+
 .site-nav .item:last-child {
-  margin-right: 0;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 }
+
 .site-nav a {
   color: $secondary-text-color;
 
@@ -71,12 +136,15 @@
     color: $accent-color;
   }
 }
-.address-list {
-  margin-left: auto;
-}
 
 .contacts-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .icon-envelope {

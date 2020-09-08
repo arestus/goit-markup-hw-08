@@ -1,25 +1,52 @@
 .our-team {
   color: $secondary-text-color;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
 .team {
   background-color: $secondary-background-color;
-  padding-bottom: 86px;
-  padding-top: 102px;
+  padding-bottom: 60px;
+  padding-top: 30px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 86px;
+    padding-top: 102px;
+  }
 }
 
 .team .item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  margin-bottom: 30px;
   background-color: $primary-white-color;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+  }
 }
 
 .team .item:nth-child(4n) {
@@ -29,10 +56,18 @@
 .teammates-list {
   list-style: none;
   padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media screen and (min-width: 786px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   & h3 {
     color: $secondary-text-color;

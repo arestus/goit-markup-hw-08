@@ -1,5 +1,15 @@
 .specialization-block {
+  display: none;
   padding-bottom: 86px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .specialization {
@@ -13,13 +23,22 @@
   text-align: center;
   letter-spacing: 0.03em;
   list-style: none;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .specialization-list {
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-  display: flex;
+  display: none;
   padding: 0;
 
   & .item {

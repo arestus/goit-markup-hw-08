@@ -16,12 +16,10 @@
 }
 
 .social-links {
-  margin-right: 30px;
-  width: 270px;
-
   & .social-list {
     display: flex;
     margin-top: 20px;
+    justify-content: center;
   }
 
   & .item:not(:last-child) {

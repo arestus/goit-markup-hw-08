@@ -3,12 +3,26 @@
 
   font-family: $logoFont;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration: none;
 
   display: flex;
+
+  @media screen and (max-width: 1199px) {
+    padding: 16px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .accent {
   color: $accent-color;
@@ -20,4 +34,8 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+/* Logo при мобильной/таблет версии */
+.footer-contacts a {
+  justify-content: center;
 }
