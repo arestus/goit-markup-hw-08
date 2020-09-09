@@ -444,7 +444,7 @@ img {
   .mobile-menu-block {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     z-index: 1;
     padding: 60px 0;
