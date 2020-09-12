@@ -1001,7 +1001,13 @@ body {
 }
 
 .hero h1 {
-  padding-top: 200px;
+  padding-top: 118px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero h1 {
+    padding-top: px;
+  }
 }
 
 .hero {
